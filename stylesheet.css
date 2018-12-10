@@ -1,0 +1,74 @@
+header {
+  height: 55px;
+  width: 100%;
+  background-color: rgba(50,85,164,0.9);
+  /* position;fixed;でフッター固定*/
+  position: fixed;
+  top:0;
+  /* z-indexはpositionと併用で要素の重なり順序を指定 */
+  z-index:10;
+}
+
+/*フッターの幅を設定*/
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto; /*要素を中央に設定*/
+}
+
+.logo {
+  width: 120px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  font-family:'Courier New';
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.3); /*255=white*/
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5); /*hoverでカーソル変更*/
+}
+/*スマートフォン用に設定*/
+.header-right a {
+  line-height: 55px;
+  padding: 0 15px;
+  color: white;
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none; /*<a href要素にテキストの装飾なし*/
+}
+
+.top-wrapper {
+  padding: 400px 0 400px 0;
+  background-image: url(future.png);
+  background-size: cover;
+}
+
+
+footer img {
+  width: 150px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+}
